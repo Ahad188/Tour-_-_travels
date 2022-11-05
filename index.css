@@ -1,0 +1,252 @@
+*{
+     margin: 0;padding: 0;
+     box-sizing: border-box;
+}
+body,html{
+     overflow-x:hidden ;
+}
+a{
+     text-decoration: none;
+}
+/*nav start*/
+.navber{
+     position: absolute;
+     left: 0;
+     top: 0;
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     padding: 20px;
+     color: lightseagreen;
+}
+.nav-links{
+     display: flex;
+     text-align: center;
+}
+.nav-links li{
+     margin: 0 30px;
+}
+.nav-links li a{
+     color: lightseagreen;
+}
+.active{
+      font-weight: bold;
+     text-decoration: underline;
+     color: #fc036b;
+}
+ul{
+     list-style-type: none;
+}
+
+/*nav end*/
+/*header start*/
+header{
+     width: 100vw;height: 100vh;
+     background-image: url("img/pexels-abhilash-mishra-1539700.jpg");
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+}
+.header-content{
+     margin-bottom: 250px;
+     color: #fff;
+     text-align: center;
+}
+.header-content h2{
+     font-size: 4vmin;
+}
+.line{
+     width:150px;
+     height: 4px;
+     background-color: #f9004d;
+     margin: 10px auto;
+     border-radius: 5px;
+}
+.header-content h1{
+     margin-top: 50px;
+     font-size: 7vmin;
+     margin-bottom: 30px;
+}
+.ctn{
+     padding: 8px 15px;
+     border-radius: 30px;
+     background-color: #f9004d;
+     color: #fff;
+}/*header end*/
+.menu-btn{
+     position: absolute;
+     top: 30px ;
+     right: 30px;
+     width: 40px;
+     cursor: pointer;
+     display: none;
+}
+section{
+     width: 80%;
+     margin: 80px auto;
+}
+.title{
+     text-align: center;font-size: 4cmin;color: lightseagreen;
+}
+.row{
+     display: flex;
+     align-items: center;
+     width: 100%;
+     justify-content: space-between;
+}
+.row .col {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.row .col img{
+     width: 50%;
+}
+.event .row{
+     margin-top: 50px;
+}
+h4{
+     margin: 20px auto;
+     color: lightseagreen;
+     font-size: 3vmin;
+}
+p{
+     color:black;
+     padding: 0 40px;
+}
+.event ,ctn{
+     margin-top: 30px;
+}
+.explor{
+     width: 100%;
+     height: 100vh;
+     background-image: url("./img/pexels-sebastian-palomino-1955134.jpg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     display: flex;
+}
+.erplor-cont{
+     width: 60%;
+     padding: 80px 100px;
+     color: lightseagreen;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+}
+.erplor-cont h1{
+     font-size: 7vmin;
+     margin: 50px;
+}
+.erplor-cont p{
+     color: whitesmoke;
+}
+.erplor-cont .ctn{
+     margin-top: 40px;
+     margin-left: 50px;
+     padding: 8px 15px;
+     border-radius: 30px;
+     background-color: #f9004d;
+     color: #fff;
+     width: 120px;
+}
+.tour .row .col{
+     width: 50%;
+}
+.tour .img-gellery{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+.img-gellery img{
+     width: 250px;
+     margin: 10px;
+     display: flex;
+}
+.footer{
+     width: 100%;
+     min-height: 100px;
+     padding: 20px 80px;
+     margin: 0;
+     background-color: grey;
+     text-align: center;
+}
+.footer p{
+     color: whitesmoke;
+     margin: 20px auto;
+     padding: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media screen*/
+@media screen and (max-width:850px){
+     .menu-btn{
+          display: block;
+     }
+     .navber{
+          padding: 0;
+     }
+     .logo{
+          position: absolute;
+          top: 30px;
+          left: 30px;
+     }
+     .nav-links{
+          flex-direction: column;
+          width: 100%;
+          height: 100vh;
+          justify-content: center;
+          background-color:grey;
+          margin-top: -900px;
+          transition: all 0.5s ease;
+     }
+     .mobile-menu{
+         margin-top: 0;
+         border-bottom-right-radius: 30%;
+     }
+     .nav-links li{
+          margin: 30px auto;
+     }
+     /*event*/
+     .row{
+          flex-direction: column;
+     }
+     .row .col{
+          margin: 20px auto;
+     }
+     .col img{
+          max-width: 90%;
+     }
+     /*explorcon*/
+     .erplor-cont{
+          width: 100%;
+     }
+     .tour .col{
+          width: 100%;
+     }
+     .img-gellery{
+          justify-content: center;
+          align-items: center;
+     }
+     .img-gellery img{
+          width: 90%;
+     }
+     .footer{
+          padding: 10px;
+     }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>responsive web designe 001</title>
+     <link rel="stylesheet" href="index.css">
+</head>
+<body><!--nav start-->
+     <nav class="navber">
+          <h2 class="logo">ADVENTURE</h2>
+          <ul class="nav-links">
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="#">Tours</a></li>
+               <li><a href="#">Explore</a></li>
+               <li><a href="#">About</a></li>
+               <li class="ctn"><a href="#">Contack</a></li>
+          </ul>
+          <img src="img/bars-solid.svg" alt="" class="menu-btn">
+     </nav><!--nav end-->
+
+
+
+      <header><!--header start-->
+           <div class="header-content">
+               <h2>Explor The Colorfull world</h2>
+               <div class="line"></div>
+                    <h1> A WONDERFULL GIFT</h1>
+                    <a href="#" class="ctn"> Learn More</a>
+                
+           </div>
+      </header><!--header end-->
+
+
+      <section class="event">
+          <div class="title">
+               <h1> Upcoming Event</h1>
+               <div class="line"></div>
+          </div>
+          <div class="row">
+               <div class="col">
+                    <img src="img/pexels-archie-binamira-705075.jpg" alt="" srcset="">
+                    <h4>Everest Camp Trek</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, quae maiores. Sequi facere commodi vel recusandae eligendi modi praesentium sint, dignissimos sit fugiat dolores odio dolorum consequatur voluptatum tempora animi!</p>
+                    <a href="#" class="ctn">Learn More</a>
+               </div>
+          
+
+          
+               <div class="col">
+                    <img src="img/pexels-archie-binamira-705075.jpg" alt="" srcset="">
+                    <h4>Everest Camp Trek</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, quae maiores. Sequi facere commodi vel recusandae eligendi modi praesentium sint, dignissimos sit fugiat dolores odio dolorum consequatur voluptatum tempora animi!</p>
+                    <a href="#" class="ctn">Learn More</a>
+               </div>
+          </div>
+      </section>
+     
+
+      <section class="explor">
+               <div class="erplor-cont">
+                    <h1>Explor The World</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, corrupti quae numquam provident nostrum adipisci corporis, repellendus consectetur quo in, aperiam tempora! A, temporibus sequi!</p>
+                    <a href="#" class="ctn">Learn More</a>
+               </div>
+      </section>
+
+      <section class="tour">
+          <div class="row">
+               <div class="col">
+                    <h1>UOCOMING TOUR & DESTIATION</h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur molestiae corrupti quos exercitationem, quae vel velit? Soluta, magni vel? Excepturi possimus quasi corrupti mollitia distinctio nisi recusandae ad laboriosam.</P>
+                    <a href="#" class="ctn">Learn More</a>
+               </div>
+               <div class="col img-col" >
+                    <div class="img-gellery">
+                         <img src="./img/pexels-archie-binamira-705075.jpg" alt="">
+                         <img src="./img/pexels-archie-binamira-705075.jpg" alt="">
+                          
+                    </div>
+               </div>
+          </div>
+ </section>
+ <section class="footer">
+          <p>104/1 Shallbon ,Rangpur Dhaka Bangladesh | Phone:00000 | Email:weaea123@hm.com</p>
+          <p>Copy Right,^ 2022 outdor Bindas</p>
+ </section>
+
+ 
+
+
+
+
+
+      <script>
+          const menubtn = document.querySelector(".menu-btn");
+          const navlink = document.querySelector(".nav-links");
+           menubtn.addEventListener("click",function(){
+               navlink.classList.toggle("mobile-menu")
+           })
+      </script>
+</body>
+</html>
